@@ -1,0 +1,26 @@
+{
+  "name": "geoip",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev --env dev",
+    "start": "wrangler dev --env dev",
+    "test": "vitest",
+    "test:coverage": "vitest --coverage",
+    "cf-typegen": "wrangler types"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.5.41",
+    "@cloudflare/workers-types": "^4.20250109.0",
+    "@types/geojson": "^7946.0.15",
+    "geojson": "^0.5.0",
+    "typescript": "^5.7.3",
+    "vitest": "2.1.8",
+    "wrangler": "^3.101.0"
+  },
+  "dependencies": {
+    "@turf/boolean-point-in-polygon": "^7.2.0",
+    "@turf/helpers": "^7.2.0"
+  }
+}
